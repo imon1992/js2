@@ -1,0 +1,177 @@
+<html>
+
+
+<style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slider {
+        width: 500px;
+        height: 400px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+
+    .left-btn {
+
+        float: left;
+        bottom: 250px;
+        position: relative;
+        display: none;
+    }
+
+    .right-btn {
+
+        float: right;
+        bottom: 250px;
+        position: relative;
+        display: none;
+    }
+
+    .slideImg {
+
+        position: relative;
+        width: 500px;
+        height: 400px;
+    }
+
+    .slideSmallImg {
+        width: 100px;
+        height: 100px;
+
+        font-size: 0;
+    }
+
+    .smalImgConteiner {
+        width: 500px;
+        margin: auto;
+        font-size: 0;
+        margin: auto;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="sliderConteiner">
+        <div class="slider">
+            <img class="slideImg first" src="https://s1.1zoom.ru/big0/930/Coast_Sunrises_and_sunsets_Waves_USA_Ocean_Kaneohe_521540_1280x775.jpg">
+            <img class="slideImg" src="http://bm.img.com.ua/nxs/img/prikol/images/large/3/9/315193.jpg" style="display:none">
+            <img class="slideImg" src="http://bm.img.com.ua/nxs/img/prikol/images/large/1/2/308321_879405.jpg" style="display:none">
+            <img class="slideImg" src="http://millionstatusov.ru/pic/statpic/all/58e61335ec518.jpg" style="display:none">
+
+
+            <img class="left-btn" src='left.png'>
+            <img class="right-btn" src='right.png'>
+
+        </div>
+    </div>
+    <div class="smalImgConteiner">
+
+
+        <img class="slideSmallImg" src="https://s1.1zoom.ru/big0/930/Coast_Sunrises_and_sunsets_Waves_USA_Ocean_Kaneohe_521540_1280x775.jpg">
+        <img class="slideSmallImg" src="http://bm.img.com.ua/nxs/img/prikol/images/large/3/9/315193.jpg">
+        <img class="slideSmallImg" src="http://bm.img.com.ua/nxs/img/prikol/images/large/1/2/308321_879405.jpg">
+        <img class="slideSmallImg" src="http://millionstatusov.ru/pic/statpic/all/58e61335ec518.jpg">
+
+
+    </div>
+    </div>
+
+
+    <script>
+        var sliderDiv = document.querySelectorAll('.slideImg');
+        for (var i = 0; i < sliderDiv.length; i++) {
+
+            if (i != 0)
+                sliderDiv[i].addEventListener('mouseover', showLeftButton);
+
+            if (i != sliderDiv.length - 1)
+                sliderDiv[i].addEventListener('mouseover', showRightButton);
+            sliderDiv[i].addEventListener('mouseout', unShowButton);
+        }
+
+        var sliderSmallImg = document.querySelectorAll('.slideSmallImg');
+
+        for (var i = 0; i < sliderSmallImg.length; i++) {
+
+            sliderSmallImg[i].addEventListener('click', showNecessarySlide);
+
+        }
+
+        var leftBtn = document.querySelector('.left-btn');
+        var rightBtn = document.querySelector('.right-btn');
+
+        leftBtn.addEventListener('mouseover', showLeftButton);
+        rightBtn.addEventListener('mouseover', showRightButton);
+
+
+        leftBtn.addEventListener('mouseout', unShowButton);
+        rightBtn.addEventListener('mouseout', showRightButton);
+        rightBtn.addEventListener('mouseout', unShowButton);
+
+        rightBtn.addEventListener('click', moveRight);
+        leftBtn.addEventListener('click', moveLeft);
+
+
+        function unShowButton() {
+            var leftBtn = document.querySelector('.left-btn');
+            var rightBtn = document.querySelector('.right-btn');
+
+            leftBtn.style.display = 'none';
+            rightBtn.style.display = 'none';
+        }
+
+        function showLeftButton() {
+            var leftBtn = document.querySelector('.left-btn');
+
+            leftBtn.style.display = 'block';
+        }
+
+        function showRightButton() {
+            var rightBtn = document.querySelector('.right-btn');
+
+            rightBtn.style.display = 'block';
+        }
+
+        var imgPos = 0;
+        var allSliderImg = document.querySelectorAll('.slideImg');
+
+        function showNecessarySlide() {
+
+            var nodes = Array.prototype.slice.call(document.querySelector('.smalImgConteiner').children);
+            sliderDiv[imgPos].style.display = 'none';
+            imgPos = nodes.indexOf(this);
+            sliderDiv[imgPos].style.display = 'block';
+        }
+
+        function moveRight() {
+            imgPos++;
+
+            allSliderImg[imgPos].style.display = 'block';
+            allSliderImg[imgPos - 1].style.display = 'none';
+            if (imgPos >= allSliderImg.length - 1) {
+                rightBtn.removeEventListener('mouseout', showRightButton);
+
+                rightBtn.style.display = 'none';
+            }
+        }
+        function moveLeft() {
+            imgPos--;
+            allSliderImg[imgPos].style.display = 'block';
+            allSliderImg[imgPos + 1].style.display = 'none';
+            if (imgPos == 0) {
+                leftBtn.removeEventListener('mouseout', showLeftButton);
+
+                leftBtn.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
