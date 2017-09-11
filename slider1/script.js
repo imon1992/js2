@@ -70,8 +70,6 @@ function showNecessarySlide() {
     var imgPos = sliderContainerNodes.indexOf(this);
     sliderImgConteiner.style = ('right:' + imgPos * 500 + "px");
     sliderPos = imgPos;
-    console.log(imgPos)
-    console.log(imgCont - 1)
 
     if (sliderPos == 0) {
         leftBtn.style.display = 'none';
