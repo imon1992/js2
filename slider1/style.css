@@ -1,0 +1,63 @@
+.sliderImg {
+    float: left;
+}
+.sliderImg img{
+    float: left;
+    height: 400px;
+    width: 500px;
+}
+
+.sliderContainer {
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.sliderImgContainer {
+    width: 2200px;
+    position: relative;
+    transition: right 1.5s ease-in-out;
+    right: 0;
+
+}
+
+.moveBtnContainer{
+    width: 500px;
+    margin: auto;
+}
+
+.left{
+    position: relative;
+    float: left;
+    bottom: 250px;
+
+}
+
+.right{
+    position: relative;
+    float: right;
+    bottom: 250px;
+}
+
+.left, .right{
+ 
+    display: none;
+}
+
+.smallSliderImgContainer{
+    margin: 0 auto;
+    width: 500px;
+    height: 100px;
+    font-size: 0;
+    text-align: center;
+}
+.smallSliderImg img{
+
+    width: 100px;
+    height: 100px;
+}
+
+.smallSliderImg {
+    display: inline-block;
+}
