@@ -2,9 +2,9 @@ var dataJson = {
     "1":{
         "categori":"cap",
         "size":["XL","S"],
-        "color":["red","blue"],
+        "color":["red"],
         "price":"25.0",
-        "description":"cap 25",
+        "description":"cap",
         "img":["https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173487_1_v1.jpg",
                 "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173489_3_v1.jpg",
                             "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173488_2_v1.jpg"]
@@ -12,9 +12,9 @@ var dataJson = {
     "2":{
         "categori":"T-shirt",
         "size":["L","S"],
-        "color":["red","blue"],
+        "color":["red"],
         "price":"25.0",
-        "description":"futbol1",
+        "description":"T-shirt",
         "img":["https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173487_1_v1.jpg",
                 "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173489_3_v1.jpg",
                             "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173488_2_v1.jpg"]
@@ -24,7 +24,7 @@ var dataJson = {
         "size":["M","XL"],
         "color":["blue"],
         "price":"25.0",
-        "description":"futbol1",
+        "description":"T-shirt",
         "img":["https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173487_1_v1.jpg",
                 "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173489_3_v1.jpg",
                             "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173488_2_v1.jpg"]
@@ -34,7 +34,7 @@ var dataJson = {
         "size":["M","XL"],
         "color":["blue"],
         "price":"25.8",
-        "description":"futbol1 25.8",
+        "description":"cap",
         "img":["https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173487_1_v1.jpg",
                 "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173489_3_v1.jpg",
                             "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173488_2_v1.jpg"]
@@ -44,7 +44,7 @@ var dataJson = {
         "size":["M","XL"],
         "color":["blue"],
         "price":"25.0",
-        "description":"futbol1",
+        "description":"sweater",
         "img":["https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173487_1_v1.jpg",
                 "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173489_3_v1.jpg",
                             "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173488_2_v1.jpg"]
@@ -54,7 +54,7 @@ var dataJson = {
         "size":["M","XL"],
         "color":["blue"],
         "price":"25.0",
-        "description":"futbol1",
+        "description":"T-shirt",
         "img":["https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173487_1_v1.jpg",
                 "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173489_3_v1.jpg",
                             "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173488_2_v1.jpg"]
@@ -64,7 +64,7 @@ var dataJson = {
         "size":["M","XL"],
         "color":["blue"],
         "price":"20.0",
-        "description":"a eto kepka 20",
+        "description":"cap",
         "img":["https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173487_1_v1.jpg",
                 "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173489_3_v1.jpg",
                             "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173488_2_v1.jpg"]
@@ -74,7 +74,7 @@ var dataJson = {
         "size":["M","XL"],
         "color":["blue"],
         "price":"58.0",
-        "description":"a eto kepka 58 ",
+        "description":"cap ",
         "img":["https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173487_1_v1.jpg",
                 "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173489_3_v1.jpg",
                             "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173488_2_v1.jpg"]
@@ -84,7 +84,7 @@ var dataJson = {
         "size":["M","XL"],
         "color":["blue"],
         "price":"1.0",
-        "description":"a eto kepka 1",
+        "description":"cap",
         "img":["https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173487_1_v1.jpg",
                 "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173489_3_v1.jpg",
                             "https://a.lmcdn.ru/pi/img46x66/N/I/NI001CMWJW39_5173488_2_v1.jpg"]

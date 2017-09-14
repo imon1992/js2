@@ -22,3 +22,16 @@
 .dropdown{
     cursor: pointer;
 }
+
+.leftContainer{
+    width: 49%; 
+    background-color: red;
+    display: inline-block;
+}
+.rightContainer{
+    width: 49%;
+    display: inline-block;
+}
+.mainThingContent{
+    height: 2000px;
+}
